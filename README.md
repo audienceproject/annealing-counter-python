@@ -17,10 +17,12 @@ Counter has value 1.0 at time 0.0
 >>> c.increment(t=0.5, amount=3.2)
 >>> c
 Counter has value 4.14868329805 at time 0.5
+>>> c.increment()
+>>> c
+Counter has value 5.14868329805 at time 0.5
 
 >>> c.get_value()
-4.148683298050514
->>> c.get_value(t=10.0)
-1.5248043512579614
-
+5.148683298050514
+>>> c.get_value(t=2.0)
+4.396022866630942
 ```
