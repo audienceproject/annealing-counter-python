@@ -2,8 +2,8 @@ class AnnealingCounter():
 
     def __init__(self, alpha=0.9):
         self.alpha = alpha  # rate of decay
-        self.last_t = .0
-        self.heat = .0
+        self.last_t = .0    # time index of last increment
+        self.heat = .0      # value of counter at last_t
 
     def increment(self, t=None, amount=1.0):
         """
