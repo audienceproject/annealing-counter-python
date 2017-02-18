@@ -2,10 +2,10 @@
 
 A Python implementation of an annealing counter.
 
+* The counter exponentially decays over time; controlled by the rate `alpha`
 * When you read and write the counter, you provide a time index (increment or read the counter at time t)
-* Sequential time indices of increments must be weakly monotonically increasing
-* The counter will decay exponentially over time; controlled by the rate `alpha`
-* You can read the counter in the present and future, but not in the past.
+* You can read the counter in the present and future (w.r.t. index of last increment), but not in the past
+* Time indices of sequential increments must be weakly monotonically increasing
 
 ## Getting Started
 
