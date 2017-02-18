@@ -29,7 +29,7 @@ class AnnealingCounter():
         return self.heat * (self.alpha ** elapsed)
 
     def __str__(self):
-        return str('Counter value at time {}: {}'.format(self.last_t, self.heat))
+        return str('Counter has value {} at time {}'.format(self.heat, self.last_t))
 
     def __repr__(self):
         return self.__str__()
