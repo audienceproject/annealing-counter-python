@@ -20,8 +20,8 @@ Counter value at time 0.0: 6.0
 Counter value at time 1.1: 6.34340399431
 >>> c
 Counter value at time 1.1: 6.34340399431
->>> c.get_value(10)
+>>> c.get_value(t=10)
 2.4835945910305464
->>> c.get_value(100)
+>>> c.get_value(t=100)
 0.00018919364956576542
 ```
