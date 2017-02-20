@@ -15,11 +15,11 @@ A Python implementation of an annealing counter.
 >>> c = AnnealingCounter(alpha=0.9)
 Counter has value 0.0 at time 0.0
 
->>> c.increment(amount=1.0)  # increment, but don't move time forward
+>>> c.increment()  # increment by 1.0, but don't move time forward
 Counter has value 1.0 at time 0.0
 >>> c.increment(amount=3.2, t=0.5)  # increment and move time forward (t=0.5)
 Counter has value 4.14868329805 at time 0.5
->>> c.increment(amount=1.0)  # increment, but don't move time forward
+>>> c.increment()  # increment by 1.0, but don't move time forward
 Counter has value 5.14868329805 at time 0.5
 
 
