@@ -15,15 +15,15 @@ A Python implementation of an annealing counter.
 >>> c = AnnealingCounter(alpha=0.9)
 Counter has value 0.0 at time 0.0
 
->>> c.increment()  # increment, but don't move time forward
+>>> c.increment(amount=1.0)  # increment, but don't move time forward
 Counter has value 1.0 at time 0.0
->>> c.increment(t=0.5, amount=3.2)  # increment and move time forward (t=0.5)
+>>> c.increment(amount=3.2, t=0.5)  # increment and move time forward (t=0.5)
 Counter has value 4.14868329805 at time 0.5
->>> c.increment()  # increment, but don't move time forward
+>>> c.increment(amount=1.0)  # increment, but don't move time forward
 Counter has value 5.14868329805 at time 0.5
 
 
->>> c.get_value()  # get value at last increment (t=0.5)
+>>> c.get_value()  # get value as after last increment (t=0.5)
 5.148683298050514
 >>> c.get_value(t=2.0)
 4.396022866630942  # get future value (t=2.0)
